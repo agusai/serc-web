@@ -23,10 +23,7 @@
         </div>
 
         <div class="kpi-grid">
-          <article class="card"><h3>Skills session</h3><p class="muted">Mon 14 Oct • 18:30</p></article>
-          <article class="card"><h3>Conditioning</h3><p class="muted">Wed 16 Oct • 18:30</p></article>
-          <article class="card"><h3>Set piece drill</h3><p class="muted">Fri 18 Oct • 18:00</p></article>
-          <article class="card"><h3>Recovery</h3><p class="muted">Sun 20 Oct • 09:00</p></article>
+          <!-- training cards rendered by app/coach/training.js -->
         </div>
       </section>
     </main>
@@ -39,5 +36,9 @@
       window.SERC_GUARDS.protect('coach');
       window.SERCUI.renderHeader('Coach dashboard');
     </script>
+
+    <script src="../app/shared/lib/supabase_client.js"></script>
+    <script src="../app/shared/api/adapter.js"></script>
+    <script src="../app/coach/training.js"></script>
   </body>
 </html>

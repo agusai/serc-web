@@ -33,18 +33,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>KL Falcons</td>
-                <td>12 Oct 2026</td>
-                <td>Serdang Field</td>
-                <td>Pending</td>
-              </tr>
-              <tr>
-                <td>PJ Rugby</td>
-                <td>18 Oct 2026</td>
-                <td>PJ Sports Complex</td>
-                <td>Pending</td>
-              </tr>
+              <!-- rows rendered by app/coach/match.js -->
             </tbody>
           </table>
         </article>
@@ -59,5 +48,9 @@
       window.SERC_GUARDS.protect('coach');
       window.SERCUI.renderHeader('Coach dashboard');
     </script>
+
+    <script src="../app/shared/lib/supabase_client.js"></script>
+    <script src="../app/shared/api/adapter.js"></script>
+    <script src="../app/coach/match.js"></script>
   </body>
 </html>

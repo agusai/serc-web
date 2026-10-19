@@ -23,21 +23,21 @@
         </div>
 
         <div class="kpi-grid">
-          <article class="kpi-card">
+          <article class="kpi-card players">
             <div class="label">Players</div>
-            <strong>68</strong>
+            <strong>—</strong>
           </article>
-          <article class="kpi-card">
+          <article class="kpi-card next-session">
             <div class="label">Next session</div>
-            <strong>18</strong>
+            <strong>—</strong>
           </article>
-          <article class="kpi-card">
+          <article class="kpi-card matches">
             <div class="label">Matches</div>
-            <strong>10</strong>
+            <strong>—</strong>
           </article>
-          <article class="kpi-card">
+          <article class="kpi-card attendance">
             <div class="label">Attendance</div>
-            <strong>92%</strong>
+            <strong>—</strong>
           </article>
         </div>
 
@@ -45,19 +45,15 @@
           <article class="card">
             <h3>Top 5 players</h3>
             <div class="card-list">
-              <div class="list-item row-between"><span>Hafiz Naim</span><span>8.9 OVR</span></div>
-              <div class="list-item row-between"><span>Aiman Yusuf</span><span>8.6 OVR</span></div>
-              <div class="list-item row-between"><span>Rafiq Ismail</span><span>8.4 OVR</span></div>
-              <div class="list-item row-between"><span>Yusuf Harun</span><span>8.3 OVR</span></div>
-              <div class="list-item row-between"><span>Arif Hadi</span><span>8.2 OVR</span></div>
+              <!-- dynamically populated -->
             </div>
           </article>
 
           <article class="card">
             <h3>Next match</h3>
             <div class="list-item">
-              <div class="row-between"><strong>SERC vs KL Falcons</strong><span class="pill">U14</span></div>
-              <p class="muted">Sat · 15:00 · Serdang Field</p>
+              <div class="row-between"><strong id="nextMatchTitle">—</strong><span class="pill">U14</span></div>
+              <p class="muted" id="nextMatchMeta">—</p>
             </div>
           </article>
         </div>
@@ -73,5 +69,9 @@
       window.SERC_GUARDS.protect('coach');
       window.SERCUI.renderHeader('Coach dashboard');
     </script>
+
+    <script src="../app/shared/lib/supabase_client.js"></script>
+    <script src="../app/shared/api/adapter.js"></script>
+    <script src="../app/coach/coach-data.js"></script>
   </body>
 </html>

@@ -34,27 +34,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Hafiz Naim</td>
-                <td>U14 Boys</td>
-                <td>Fly-half</td>
-                <td>8.9</td>
-                <td><span class="status-dot"></span>Active</td>
-              </tr>
-              <tr>
-                <td>Aiman Yusuf</td>
-                <td>U12 Boys</td>
-                <td>Fullback</td>
-                <td>8.6</td>
-                <td><span class="status-dot"></span>Active</td>
-              </tr>
-              <tr>
-                <td>Yusuf Harun</td>
-                <td>U10 Boys</td>
-                <td>Hooker</td>
-                <td>8.3</td>
-                <td><span class="status-dot"></span>Active</td>
-              </tr>
+              <!-- rows rendered by app/coach/squad.js -->
             </tbody>
           </table>
         </article>
@@ -70,5 +50,9 @@
       window.SERC_GUARDS.protect('coach');
       window.SERCUI.renderHeader('Coach dashboard');
     </script>
+
+    <script src="../app/shared/lib/supabase_client.js"></script>
+    <script src="../app/shared/api/adapter.js"></script>
+    <script src="../app/coach/squad.js"></script>
   </body>
 </html>
