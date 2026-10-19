@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/mttvetco/repositories/serc-web
-    - /bin/cp -R * $DEPLOYPATH
