@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mttvetco/public_html/serc.libohive.com/
+    - export DEPLOYPATH=/home/mttvetco/repositories/serc-web/
     - /bin/cp -R * $DEPLOYPATH
