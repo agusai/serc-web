@@ -1,0 +1,6 @@
+/* training specific styles */
+@import url('./coach.css');
+
+#trainingCards {
+  margin-top: 12px;
+}

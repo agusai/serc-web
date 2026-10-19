@@ -7,19 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/squad.css" />
   </head>
   <body>
     <div id="appHeader"></div>
 
     <main class="app-shell">
-      <section style="width:min(1180px,calc(100% - 32px));margin:0 auto;">
+      <section class="page-shell">
         <div class="page-header">
           <div>
             <span class="eyebrow">Squad</span>
-            <h1 style="font-family:'Anton',sans-serif;letter-spacing:0.04em;margin:0.45rem 0 0;">Player management</h1>
+            <h1>Player management</h1>
           </div>
-          <button class="button button-primary" type="button" onclick="window.SERCUI.showSheet(' <div class=\'list-item\'> <strong>Player detail</strong><p class=\'muted\'>Name: Hafiz Naim<br>Category: U14 Boys</p></div> ')">Open sheet</button>
+          <button class="button button-primary" type="button">+ Add player</button>
         </div>
 
         <article class="table-card card">
@@ -33,9 +33,7 @@
                 <th>Status</th>
               </tr>
             </thead>
-            <tbody>
-              <!-- rows rendered by app/coach/squad.js -->
-            </tbody>
+            <tbody id="squadTableBody"></tbody>
           </table>
         </article>
       </section>
@@ -47,12 +45,12 @@
     <script src="../shared/ui/sheet.js"></script>
     <script src="../shared/guards/protect.js"></script>
     <script>
-      window.SERC_GUARDS.protect('coach');
+      window.SERC_GUARDS.protect('coaching');
       window.SERCUI.renderHeader('Coach dashboard');
     </script>
 
     <script src="../shared/lib/supabase_client.js"></script>
     <script src="../shared/api/adapter.js"></script>
-    <script src="squad.js"></script>
+    <script src="./js/squad.js"></script>
   </body>
 </html>

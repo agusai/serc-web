@@ -7,17 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/match.css" />
   </head>
   <body>
     <div id="appHeader"></div>
 
     <main class="app-shell">
-      <section style="width:min(1180px,calc(100% - 32px));margin:0 auto;">
+      <section class="page-shell">
         <div class="page-header">
           <div>
             <span class="eyebrow">Match center</span>
-            <h1 style="font-family:'Anton',sans-serif;letter-spacing:0.04em;margin:0.45rem 0 0;">Fixtures and analysis</h1>
+            <h1>Fixtures and analysis</h1>
           </div>
           <button class="button button-primary" type="button">+ Add fixture</button>
         </div>
@@ -32,9 +32,7 @@
                 <th>Outcome</th>
               </tr>
             </thead>
-            <tbody>
-              <!-- rows rendered by app/coach/match.js -->
-            </tbody>
+            <tbody id="matchTableBody"></tbody>
           </table>
         </article>
       </section>
@@ -43,14 +41,14 @@
     <script src="../shared/lib/config.js"></script>
     <script src="../shared/lib/utils.js"></script>
     <script src="../shared/ui/header.js"></script>
-    <script src="../app/shared/guards/protect.js"></script>
+    <script src="../shared/guards/protect.js"></script>
     <script>
-      window.SERC_GUARDS.protect('coach');
+      window.SERC_GUARDS.protect('coaching');
       window.SERCUI.renderHeader('Coach dashboard');
     </script>
 
     <script src="../shared/lib/supabase_client.js"></script>
     <script src="../shared/api/adapter.js"></script>
-    <script src="match.js"></script>
+    <script src="./js/match.js"></script>
   </body>
 </html>

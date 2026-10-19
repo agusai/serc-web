@@ -1,0 +1,6 @@
+/* squad specific styles */
+@import url('./coach.css');
+
+#squadTableBody td {
+  vertical-align: middle;
+}
