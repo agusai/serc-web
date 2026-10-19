@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SERC | Serdang Eagles Rugby Club</title>
+    <meta
+      name="description"
+      content="SERC club management and player portal for Serdang Eagles Rugby Club."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="landing">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="logo-mark">L</div>
+        <div>
+          <div class="brand-name">SERC</div>
+          <small>Serdang Eagles Rugby Club</small>
+        </div>
+      </div>
+      <nav class="topnav">
+        <a href="#about">About</a>
+        <a href="#fixtures">Fixtures</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-dark" href="app/login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">LIBOHIVE • CLUB MANAGEMENT</span>
+          <h1>Built for the next generation of rugby club operations.</h1>
+          <p>
+            Centralise player records, schedules, attendance, fees, and match performance
+            across every SERC role — from coaches to parents and admins.
+          </p>
+          <div class="cta-row">
+            <a class="button button-primary" href="app/login.html">Open portal</a>
+            <a class="button button-secondary" href="#fixtures">View fixtures</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>105</strong><span>Users</span></li>
+            <li><strong>5</strong><span>Categories</span></li>
+            <li><strong>10</strong><span>Matches</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="card-glow">
+            <div class="score-panel">
+              <small>Next match</small>
+              <h3>SERC U14 vs KL Hawks</h3>
+              <div class="meta-row">
+                <span>Sat · 15:00</span>
+                <span>Serdang Field</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-grid" id="about">
+        <article class="panel">
+          <span class="eyebrow">Club</span>
+          <h2>Purpose built for SERC</h2>
+          <p>
+            A dedicated club management system for players, coaches, parents, and staff with
+            role-based access, shared APIs, and a responsive app experience.
+          </p>
+        </article>
+        <article class="panel">
+          <span class="eyebrow">Roles</span>
+          <h2>Unified access model</h2>
+          <ul class="list-check">
+            <li>Superadmin</li>
+            <li>Management</li>
+            <li>Coaching</li>
+            <li>Parent</li>
+            <li>Player</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <span class="eyebrow">Stack</span>
+          <h2>Static web + Supabase</h2>
+          <p>
+            HTML, CSS, and JavaScript front-end layered over Supabase for auth, storage, and
+            data access, following the architecture in the SERC handover document.
+          </p>
+        </article>
+      </section>
+
+      <section class="fixtures" id="fixtures">
+        <div class="section-heading">
+          <span class="eyebrow">Schedule</span>
+          <h2>Upcoming fixtures</h2>
+        </div>
+        <div class="fixture-list">
+          <div class="fixture-card">
+            <div>
+              <span class="pill">U14 Boys</span>
+              <h3>SERC vs KL Falcons</h3>
+            </div>
+            <div class="fixture-meta">
+              <span>12 Oct</span>
+              <span>15:00</span>
+            </div>
+          </div>
+          <div class="fixture-card">
+            <div>
+              <span class="pill">U12 Boys</span>
+              <h3>SERC vs PJ Rugby</h3>
+            </div>
+            <div class="fixture-meta">
+              <span>18 Oct</span>
+              <span>10:30</span>
+            </div>
+          </div>
+          <div class="fixture-card">
+            <div>
+              <span class="pill">U10 Girls</span>
+              <h3>SERC vs Putrajaya</h3>
+            </div>
+            <div class="fixture-meta">
+              <span>20 Oct</span>
+              <span>09:00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div>
+        <strong>SERC</strong>
+        <span>Serdang Eagles Rugby Club</span>
+      </div>
+      <div>
+        <a href="mailto:hello@serc.libohive.com">hello@serc.libohive.com</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

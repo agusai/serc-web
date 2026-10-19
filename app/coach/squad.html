@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SERC Squad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="appHeader"></div>
+
+    <main class="app-shell">
+      <section style="width:min(1180px,calc(100% - 32px));margin:0 auto;">
+        <div class="page-header">
+          <div>
+            <span class="eyebrow">Squad</span>
+            <h1 style="font-family:'Anton',sans-serif;letter-spacing:0.04em;margin:0.45rem 0 0;">Player management</h1>
+          </div>
+          <button class="button button-primary" type="button" onclick="window.SERCUI.showSheet(' <div class=\'list-item\'> <strong>Player detail</strong><p class=\'muted\'>Name: Hafiz Naim<br>Category: U14 Boys</p></div> ')">Open sheet</button>
+        </div>
+
+        <article class="table-card card">
+          <table>
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Category</th>
+                <th>Position</th>
+                <th>Metrics</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hafiz Naim</td>
+                <td>U14 Boys</td>
+                <td>Fly-half</td>
+                <td>8.9</td>
+                <td><span class="status-dot"></span>Active</td>
+              </tr>
+              <tr>
+                <td>Aiman Yusuf</td>
+                <td>U12 Boys</td>
+                <td>Fullback</td>
+                <td>8.6</td>
+                <td><span class="status-dot"></span>Active</td>
+              </tr>
+              <tr>
+                <td>Yusuf Harun</td>
+                <td>U10 Boys</td>
+                <td>Hooker</td>
+                <td>8.3</td>
+                <td><span class="status-dot"></span>Active</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+
+    <script src="../app/shared/lib/config.js"></script>
+    <script src="../app/shared/lib/utils.js"></script>
+    <script src="../app/shared/ui/header.js"></script>
+    <script src="../app/shared/ui/sheet.js"></script>
+    <script src="../app/shared/guards/protect.js"></script>
+    <script>
+      window.SERC_GUARDS.protect('coach');
+      window.SERCUI.renderHeader('Coach dashboard');
+    </script>
+  </body>
+</html>

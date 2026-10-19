@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SERC Coach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="appHeader"></div>
+
+    <main class="app-shell">
+      <section class="app-shell" style="width:min(1180px,calc(100% - 32px));margin:0 auto;">
+        <div class="page-header">
+          <div>
+            <span class="eyebrow">Coach portal</span>
+            <h1 style="font-family:'Anton',sans-serif;letter-spacing:0.04em;margin:0.45rem 0 0;">Home dashboard</h1>
+          </div>
+          <a class="button button-primary" href="squad.html">View squad</a>
+        </div>
+
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <div class="label">Players</div>
+            <strong>68</strong>
+          </article>
+          <article class="kpi-card">
+            <div class="label">Next session</div>
+            <strong>18</strong>
+          </article>
+          <article class="kpi-card">
+            <div class="label">Matches</div>
+            <strong>10</strong>
+          </article>
+          <article class="kpi-card">
+            <div class="label">Attendance</div>
+            <strong>92%</strong>
+          </article>
+        </div>
+
+        <div class="metric-grid" style="margin-top:1.5rem;">
+          <article class="card">
+            <h3>Top 5 players</h3>
+            <div class="card-list">
+              <div class="list-item row-between"><span>Hafiz Naim</span><span>8.9 OVR</span></div>
+              <div class="list-item row-between"><span>Aiman Yusuf</span><span>8.6 OVR</span></div>
+              <div class="list-item row-between"><span>Rafiq Ismail</span><span>8.4 OVR</span></div>
+              <div class="list-item row-between"><span>Yusuf Harun</span><span>8.3 OVR</span></div>
+              <div class="list-item row-between"><span>Arif Hadi</span><span>8.2 OVR</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Next match</h3>
+            <div class="list-item">
+              <div class="row-between"><strong>SERC vs KL Falcons</strong><span class="pill">U14</span></div>
+              <p class="muted">Sat · 15:00 · Serdang Field</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="../app/shared/lib/config.js"></script>
+    <script src="../app/shared/lib/utils.js"></script>
+    <script src="../app/shared/ui/header.js"></script>
+    <script src="../app/shared/ui/toast.js"></script>
+    <script src="../app/shared/guards/protect.js"></script>
+    <script>
+      window.SERC_GUARDS.protect('coach');
+      window.SERCUI.renderHeader('Coach dashboard');
+    </script>
+  </body>
+</html>

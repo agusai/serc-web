@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SERC Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="nav-header">
+      <div class="brand-wrap">
+        <div class="logo-mark">L</div>
+        <div>
+          <div class="brand-name">SERC</div>
+          <small>Portal Access</small>
+        </div>
+      </div>
+      <a class="button button-secondary" href="../index.html">Back to home</a>
+    </header>
+
+    <main class="login-shell">
+      <section class="form-card">
+        <h1>Member login</h1>
+        <form id="loginForm" class="form-grid">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@serc.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="••••••••" required />
+          </label>
+          <label>
+            Role
+            <select name="role">
+              <option value="coach">Coach</option>
+              <option value="management">Management</option>
+              <option value="superadmin">Superadmin</option>
+              <option value="parent">Parent</option>
+              <option value="player">Player</option>
+            </select>
+          </label>
+          <div class="inline-row">
+            <span class="muted">Role-based portal</span>
+            <button class="button button-primary" type="submit">Sign in</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="../app/shared/lib/config.js"></script>
+    <script src="../app/shared/lib/utils.js"></script>
+    <script src="../app/shared/ui/toast.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SERC Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="appHeader"></div>
+
+    <main class="app-shell">
+      <section style="width:min(1180px,calc(100% - 32px));margin:0 auto;">
+        <div class="page-header">
+          <div>
+            <span class="eyebrow">Training</span>
+            <h1 style="font-family:'Anton',sans-serif;letter-spacing:0.04em;margin:0.45rem 0 0;">Session planner</h1>
+          </div>
+          <button class="button button-primary" type="button">+ New session</button>
+        </div>
+
+        <div class="kpi-grid">
+          <article class="card"><h3>Skills session</h3><p class="muted">Mon 14 Oct • 18:30</p></article>
+          <article class="card"><h3>Conditioning</h3><p class="muted">Wed 16 Oct • 18:30</p></article>
+          <article class="card"><h3>Set piece drill</h3><p class="muted">Fri 18 Oct • 18:00</p></article>
+          <article class="card"><h3>Recovery</h3><p class="muted">Sun 20 Oct • 09:00</p></article>
+        </div>
+      </section>
+    </main>
+
+    <script src="../app/shared/lib/config.js"></script>
+    <script src="../app/shared/lib/utils.js"></script>
+    <script src="../app/shared/ui/header.js"></script>
+    <script src="../app/shared/guards/protect.js"></script>
+    <script>
+      window.SERC_GUARDS.protect('coach');
+      window.SERCUI.renderHeader('Coach dashboard');
+    </script>
+  </body>
+</html>
