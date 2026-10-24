@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0D0D0D">
+<title>Login · Serdang Eagles</title>
+<link rel="icon" href="../images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body class="login-body">
+
+<div class="login-wrap">
+  <div class="login-card">
+    <img src="../images/logo.png" alt="SERC" class="login-logo">
+    <div class="login-brand">SERDANG EAGLES</div>
+    <div class="login-sub">Member Portal</div>
+
+    <form id="loginForm" class="login-form">
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full" id="loginBtn">
+        Log In
+      </button>
+      <div class="login-error" id="loginError"></div>
+    </form>
+
+    <a href="/" class="login-back">← Back to site</a>
+  </div>
+</div>
+
+<script type="module" src="../js/firebase.js"></script>
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>
